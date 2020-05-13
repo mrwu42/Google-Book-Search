@@ -9,7 +9,8 @@ class Search extends Component {
   state = {
     title: "",
     toResults: false,
-    results: []
+    results: [],
+    apiKey: `${process.env.REACT_APP_BOOKS_KEY}`
   };
 
   handleInputChange = event => {

@@ -5,6 +5,8 @@ import Results from "./pages/Results";
 import Saved from "./pages/Saved";
 import NoMatch from "./pages/NoMatch";
 
+app.use(express.static(path.join(__dirname, '/../client/build')));
+
 const App = () => (
   <Router>
     <div>
